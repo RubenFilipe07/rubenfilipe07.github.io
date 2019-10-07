@@ -1,69 +1,102 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Xilofone</title>
-    <script src="xilofone.js"></script>
-    <script src="../smartDetect.js"></script>
-<style>
 body{
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 25pt;
-  color: rgb(0, 0, 0);
+ background-color: rgb(212, 212, 212);
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ max-width: 45%;
+ margin: auto;
 }
 
 #interface{
-  margin-left: 25%;
-  margin-top: 10%;
+ background-color: rgb(255, 255, 255);
+ margin: auto;  
+ margin-top: -20px;  
+ height: auto;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 }
 
-body{
-    user-select: none;    
+#centro{
+ padding: 45px;
 }
 
-canvas{
- background-color: black; 
- border: 1px solid black;
+h1{
+ color: rgb(39, 39, 39);
+ font-size: 36pt;
+ margin-top: -15px;
 }
 
-span{
- padding-left: 57px;
+ul li{
+ list-style-type: none;
 }
 
-#notas{
+#titulo a{
+color: rgb(75, 75, 75);
+font-size: 17pt;
+}
+
+#titulo a:hover{
+color: black;
+}
+
+img{
+ width: 350px;
+ margin: 15px auto 0px 5px;
+}
+
+a{
+ text-decoration:none; 
+}
+#informacoes{
+ background-color: rgb(235, 235, 235);
+ padding: 15px 0px 15px 0px;
+ border-top: 1px solid #c0c0c0;
  text-align: center;
- margin-right: 50px;
- margin-top: 80px; 
 }
 
-</style>
+#informacoes a{
+ padding-right: 5px;
+ color: rgb(16, 56, 165);
+}
 
-</head>
-<body onload="draw();">
+#informacoes a:visited{
+color: black;
+}
 
-    <div id="interface">
-    <canvas id="c" width="75" height="200" onmousedown="toca_do()"></canvas> 
-    <canvas id="d" width="75" height="200" onmousedown="toca_re()"></canvas>
-    <canvas id="e" width="75" height="200" onmousedown="toca_mi()"></canvas>
-    <canvas id="f" width="75" height="200" onmousedown="toca_fa()"></canvas>
-    <canvas id="g" width="75" height="200" onmousedown="toca_sol()"></canvas>
-    <canvas id="a" width="75" height="200" onmousedown="toca_la()"></canvas>
-    <canvas id="b" width="75" height="200" onmousedown="toca_si()"></canvas>  
-    <canvas id="c2" width="75" height="200" onmousedown="toca_do2()"></canvas>  
-    </div>
-   
-    <p id="notas">
-    <span>C</span>
-    <span>D</span>
-    <span>E</span>
-    <span>F</span>
-    <span>G</span>
-    <span>A</span>
-    <span>B</span>
-    <span>C2</span>
-    </p>
+#card{
+position: fixed;
+right: 3%;
+bottom: 5px;
+}
 
-</body>
-</html>
+::selection{
+ color: white;
+ background-color: red;
+}
+
+@media screen and (max-width: 1300px) {
+    #card {
+        right: 1%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        max-width: 90%;
+    }
+
+     p{
+       font-size: 14pt;  
+     }
+}
+
+@media screen and (max-width: 1157px) {
+    body{
+        max-width: 70%;
+    }
+
+    #card{
+     display: none;   
+    }
+    #centro{
+        padding: 45px;
+     }
+}
+

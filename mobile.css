@@ -29,7 +29,8 @@ body{
    
    #titulo a{
    color: rgb(75, 75, 75);
-   font-size: 19pt;
+   font-size: 35pt;
+   margin-left: 20px;
    }
    
    #titulo a:hover{
@@ -37,18 +38,26 @@ body{
    }
    
    img{
-    width: 350px;
-    margin: 15px auto 0px 5px;
+    width: 450px;
+    display: block;
+    margin: 25px auto 0px auto;
    }
    
    a{
     text-decoration:none; 
    }
+
+   p{
+     font-size: 8pt;  
+     text-align: center; 
+   }
+   
    #informacoes{
     background-color: rgb(235, 235, 235);
     padding: 15px 0px 15px 0px;
     border-top: 1px solid #c0c0c0;
     text-align: center;
+    font-size: 24pt;
    }
    
    #informacoes a{

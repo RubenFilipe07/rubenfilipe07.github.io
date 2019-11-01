@@ -12,7 +12,7 @@ body{
     margin: 25% auto;
     border: 2px solid rgba(136, 136, 136, 0.7);
     border-radius: 5px;
-    height: 600px;
+    height: 825px;
 }
 
 div button{
@@ -36,7 +36,7 @@ button:hover{
 #titulo{
   font-size: 57pt;
   text-align: center;
-  margin-top: -50px;
+  margin-top: -20px;
 }
 
 span{
@@ -48,6 +48,7 @@ input{
   height: 60px;
   width: 80%;
   margin-top: 10px;
+  font-size: 30pt;
 }
 
 select{

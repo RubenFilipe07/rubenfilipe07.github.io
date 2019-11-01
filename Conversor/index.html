@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Conversor</title> 
-    <link rel="stylesheet" href="Estilo.css">
+    <link  id="css" rel="stylesheet" href="Estilo/estilo.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="conversor.js"></script>
 <script src="../smartDetect.js"></script>
+<script>
+  if(screen.width <=559){
+ document.getElementById("css").href = "Estilo/mobile.css"
+  }
+</script>
 </head>
 <body>
    
   <div id="interface"> 
       <h1 id="titulo">Conversor de moedas</h1>
-    <span>Valor: </span>   <input id="entrada" type="number"> 
+    <span>Valor: </span> <br id="br"> <input id="entrada" type="number">  <br id="br">
+    <span id="br">Moeda: </span> 
     <select id="moedas">
         <option value='0'>Selecione</option>
         <option value='1'>Dólar</option>

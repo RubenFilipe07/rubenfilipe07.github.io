@@ -33,16 +33,16 @@ button:hover{
 }
 
 button:active{
-    transition: 150ms;
+  transition: 150ms;
 }
 
 #titulo{
-    margin: 0px 0px 30px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 #atualizacao{
-    margin-top: 10px; 
-    color: gray;
+  margin-top: 10px;  
+  color: gray;
 }
 
 #br{

@@ -1,7 +1,7 @@
 body{
-    max-width: 900px;
+    max-width: 95%;
     margin: auto;
-    background:rgba(109,70,252,1);
+    background:rgb(90, 90, 90);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 30pt;
 }
@@ -12,18 +12,17 @@ body{
     margin: 25% auto;
     border: 2px solid rgba(136, 136, 136, 0.7);
     border-radius: 5px;
-    height: 825px;
+    max-height: 80%;
 }
 
 div button{
-   padding: 30px;
+   padding: 20px;
    border: 1px solid #eee;
    border-radius: 6px;
    background-color: greenyellow;
-   width: 50%;
-   margin: 40px 25%;
-   font-size: 30pt;
-
+   width: 40%;
+   margin: 65px 25% 40px 25%;
+   font-size: 35pt;
 }
 
 button:hover{
@@ -34,32 +33,37 @@ button:hover{
 }
 
 #titulo{
-  font-size: 57pt;
+  font-size: 52pt;
   text-align: center;
   margin-top: -20px;
 }
 
 span{
-  font-size: 30pt;   
+  font-size: 35pt;   
 }
 
 input{
   border: 2px solid black;     
   height: 60px;
-  width: 80%;
+  width: 90%;
   margin-top: 10px;
-  font-size: 30pt;
+  font-size: 35pt;
 }
 
 select{
   height: 60px;
-  width: 60%;    
+  width: 68.5%;    
   border: 1px solid rgb(156, 156, 156);  
-  font-size: 30pt;
-  margin: 20px 20%;
+  font-size: 35pt;
+  margin: 30px 0px 0px 0px;
 }
 
 #atualizacao{
     margin-top: 10px; 
+    font-size: 28pt;
     color: gray;
+}
+
+#saida{
+font-size: 30pt;
 }
